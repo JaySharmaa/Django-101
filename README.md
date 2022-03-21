@@ -4,7 +4,6 @@ While established photo sharing sites already exist, Image-Sharer is different b
 **Installation**
 
 ```
-cd django-101
 pipenv shell
 pip install -r requirements.txt
 python manage.py migrate
