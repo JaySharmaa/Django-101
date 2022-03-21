@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Upload A New Image {% endblock%}
+
+{% block body %}
+
+    <form method="Post" action="" enctype='multipart/form-data' class="col-sm-4 offset-4 py-4 my-4">
+        <h2 style="font-weight: bold; font-style: italic; text-decoration: underline lightyellow;">Upload an Image</h2>
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <div>
+            <button type="submit" class="btn btn-lg btn-success rounded-pill">Submit Form</button>
+        </div>
+    </form>
+{% endblock %}
